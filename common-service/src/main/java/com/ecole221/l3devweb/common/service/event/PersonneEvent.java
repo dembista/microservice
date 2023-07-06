@@ -1,16 +1,14 @@
 package com.ecole221.l3devweb.common.service.event;
 
 import com.ecole221.l3devweb.common.service.dto.PersonneDto;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.Date;
 import java.util.UUID;
 
-@Data
+@Setter
+@Getter
 @NoArgsConstructor
-@AllArgsConstructor
 public class PersonneEvent implements Event {
 
     private PersonneDto personneDto;
@@ -29,5 +27,10 @@ public class PersonneEvent implements Event {
     @Override
     public Date getEventDate() {
         return eventDate;
+    }
+
+    public PersonneEvent(PersonneDto personneDto, PersonneStatus personneStatus) {
+        this.personneDto = personneDto;
+        this.personneStatus = personneStatus;
     }
 }

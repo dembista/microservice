@@ -1,10 +1,18 @@
 package com.ecole221.l3devweb.common.service.event;
 
 import com.ecole221.l3devweb.common.service.dto.PersonneAgeDto;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.Date;
 import java.util.UUID;
 
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
 public class AgeEvent implements  Event{
 
     private AgeStatus ageStatus;

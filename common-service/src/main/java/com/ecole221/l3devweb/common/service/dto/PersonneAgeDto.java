@@ -1,14 +1,12 @@
 package com.ecole221.l3devweb.common.service.dto;
 
 import com.ecole221.l3devweb.common.service.event.AgeStatus;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.UUID;
 
-@Data
+@Setter
+@Getter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
